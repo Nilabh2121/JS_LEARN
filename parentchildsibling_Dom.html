@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="Nilabh"> Nilabh</p>
+    <p class="Welcome">Developer1</p>
+    <p class="Welcome">Developer2</p>
+    <p class="Welcome">Developer3</p>
+
+
+    <ul><li>Like</li>
+        <li>Share</li>
+        <li>Subscribe</li></ul>
+
+    <script>
+        var child = document.body.children;
+        console.log(child);
+
+
+
+
+        // add a new hild in a body
+
+        var para= document.createElement("p");
+        var textNode = document.createTextNode("This is a new paragraph by Nilabh");
+        para.appendChild(textNode);
+        console.log(para);
+        console.log(textNode);
+
+        document.body.appendChild(para);
+
+        // acess first child and lastchild
+
+        var list = document.querySelector("ul");
+        console.log(list);
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+
+
+        // how to find siblings
+
+        var siblings =  Nilabh.nextElementSibling.nextElementSibling;
+        console.log(siblings);
+
+        //  how to find parent 
+
+        console.log(list.parentNode);
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myfun(){
+            var user = confirm("Do you wanr to visit my Linkedin profile ");
+            if(user == true){
+                window.open("https://www.linkedin.com/in/nilabh-mishra-4b256b200/");
+                return true;
+            }
+            else{
+                document.write("User does not want to Visit website ");
+                return false;
+            }
+        }
+    </script>
+
+    <input type="button" name=" " onclick="myfun()" value="Click Here" >
+</body>
+</html>
