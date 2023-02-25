@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <button onclick = changecolor()>CHANGE COLOR </button>
     <script>
         var d = new Date();
         var n = d.getTime();
@@ -17,6 +19,12 @@
 
 
         document.write(hour+":" +minute+":"+second);
+        document.body.style.backgroundColor = "Red";
+        document.body.style.alignItems;
+
+        function changecolor(){
+            document.body.style.backgroundColor = "Blue";
+        }
     </script>
 </body>
 </html>
